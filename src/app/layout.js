@@ -1,9 +1,15 @@
+import NavBar from "../../components/navBar";
+import Footer from "../../components/footer";
+import "../../styles/globals.css";
 
 export default function RootLayout({ children }) {
+  const isAdmin = false;
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body>
-        {children}
+        <NavBar isAdmin={isAdmin}/>
+        <main>{children} </main>
+        <Footer/>
       </body>
     </html>
   );

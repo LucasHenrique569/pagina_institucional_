@@ -1,6 +1,4 @@
-/* ===========================
-   Container centralizado (.page)
-   =========================== */
+
 .page {
   max-width: var(--container);
   margin: 0 auto;
@@ -10,11 +8,9 @@
   color: var(--text);
 }
 
-/* ===========================
-   HERO / BANNER
-   =========================== */
+
 .hero {
-  min-height: 600px; /* altura padronizada */
+  min-height: 600px; 
   background-image: url("/assets/imagemtopo.jpg");
   background-size: cover;
   background-position: center;
@@ -43,11 +39,9 @@
   opacity: 0.95;
 }
 
-/* ===========================
-   SOBRE NÓS
-   =========================== */
+
 .about {
-  min-height: 600px; /* mesma altura do banner */
+  min-height: 600px; 
   background: linear-gradient(to bottom, var(--color-primary) 50%, #ffffff 50%);
   padding: 28px 0 40px;
   text-align: center;
@@ -59,7 +53,7 @@
   font-size: 40px;
 }
 
-/* container dos cards */
+
 .cards {
   display: flex;
   justify-content: center;
@@ -70,7 +64,7 @@
   box-sizing: border-box;
 }
 
-/* card */
+
 .card {
   width: 350px;
   min-height: 350px;
@@ -105,11 +99,9 @@
   text-align: center;
 }
 
-/* ===========================
-   PRODUTOS
-   =========================== */
+
 .productsSection {
-  min-height: 600px; /* mesma altura */
+  min-height: 600px; 
   padding: 30px 0;
   background: var(--color-selected);
 }
@@ -121,22 +113,19 @@
   font-size: 40px;
 }
 
-/* ===========================
-   CTA / Newsletter
-   =========================== */
 .cta {
   min-height: 600px;
   background-image: url("/assets/imagembottom.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: center; /* centraliza horizontalmente */
-  align-items: flex-start; /* move o conteúdo pro topo */
+  justify-content: center; 
+  align-items: flex-start; 
 }
 
 .ctaInner {
   width: 50%;
-  padding-top: 60px; /* dá um espaçamento do topo */
+  padding-top: 60px;
   text-align: center;
   color: white;
   text-shadow: 0 2px 6px rgba(0,0,0,0.6);
@@ -153,22 +142,19 @@
 .ctaButton {
   display: inline-block;
   margin: 0 auto;
-  padding: 16px 48px; /* aumenta altura e largura */
+  padding: 16px 48px; 
   border-radius: 10px;
   border: none;
   background: white;
   color: black;
   cursor: pointer;
-  font-size: 20px; /* aumenta o texto */
-  font-weight: 700; /* deixa o texto mais destacado */
+  font-size: 20px; 
+  font-weight: 700; 
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
   transition: all 0.3s ease;
 }
 
 
-/* ===========================
-   Responsividade
-   =========================== */
 @media (max-width: 1200px) {
   .page {
     padding-left: 4.5%;
@@ -196,7 +182,7 @@
   .about,
   .productsSection,
   .cta {
-    min-height: 500px; /* ajusta para telas menores */
+    min-height: 500px; 
   }
 }
 

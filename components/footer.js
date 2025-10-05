@@ -1,25 +1,21 @@
-export default function Footer(){
+"use client";
 
-    return(
+import "../styles/footer.css";
 
-        <footer>
-
-        <div>
-            <p>Nossas redes sociais </p>
-            <div>
-                <i className="fa-brands fa-instagram"></i>
-                <i className="fa-brands fa-square-facebook"></i>
-            </div>
-            
-        
-
+export default function Footer() {
+  return (
+    <footer>
+      <div className="footer-section">
+        <p>Nossas redes sociais</p>
+        <div className="icones">
+          <i className="fa-brands fa-instagram"></i>
+          <i className="fa-brands fa-square-facebook"></i>
         </div>
-        <div>
-            <p>Nome da empresa</p>
-        </div>
+      </div>
 
-        </footer>
-
-    )
-
+      <div className="footer-section">
+        <p>Nome da empresa</p>
+      </div>
+    </footer>
+  );
 }

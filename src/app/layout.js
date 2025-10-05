@@ -1,6 +1,7 @@
 import NavBar from "../../components/navBar";
 import Footer from "../../components/footer";
-import "../../styles/globals.css";
+
+import "../app/globals.css";
 
 export default function RootLayout({ children }) {
   const isAdmin = false;

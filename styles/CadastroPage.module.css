@@ -1,18 +1,20 @@
 
 
+/* * ESTILOS DO CONTEÚDO PRINCIPAL (FORMULÁRIO) */
 .mainContent {
   padding: 40px 20px;
   background-color: var(--primary-bg);
   min-height: calc(100vh - 200px); 
 }
 
-
+/* * TÍTULO E DIVISÓRIA */
 .sectionTitle {
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 10px;
   color: var(--text-color);
   max-width: 1000px;
+  /* Centralização */
   margin-left: auto;
   margin-right: auto;
 }
@@ -23,14 +25,15 @@
   background: #333; 
   margin-bottom: 30px;
   max-width: 1000px;
+  /* Centralização */
   margin-left: auto;
   margin-right: auto;
 }
 
-
+/* * SEÇÃO DE CADASTRO (O FORMULÁRIO) */
 .registrationSection {
-  
-  margin-left: 50px; 
+  /* Centraliza o bloco do formulário na página */
+  margin: 0 auto; 
   max-width: 550px; 
   padding-top: 20px;
 }
@@ -40,53 +43,62 @@
   font-weight: 500;
   margin-bottom: 25px;
   color: var(--text-color);
-  
-  margin-left: -50px; 
+  /* Alinha com as labels e inputs */
+  text-align: left; 
+  padding-left: 75px; 
 }
 
 .clientForm {
   display: flex;
   flex-direction: column;
+  /* Centraliza os grupos de campos e o botão */
+  align-items: center; 
 }
 
 .formGroup {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
+  /* Define a largura do container para alinhamento da label */
+  width: 400px; 
 }
 
 .formGroup label {
   font-size: 1rem;
-  
+  /* Labels em negrito */
   font-weight: 700; 
   margin-bottom: 5px;
   color: var(--text-color);
+  /* Alinha a label à esquerda de seu container (formGroup) */
+  align-self: flex-start; 
 }
 
 .formGroup input {
-  
+  /* Aumenta a altura do input */
   padding: 10px 14px; 
   border: 1px solid #ccc;
   border-radius: 4px;
-
-  width: 120%; 
+  /* Input preenche a largura de 400px do formGroup */
+  width: 100%; 
   box-sizing: border-box; 
-  
   font-size: 1.1rem; 
 }
 
-
+/* * Botão "Registrar" */
 .registerButton {
-  align-self: flex-start; 
+  /* Mantido centralizado pelo align-items: center do clientForm */
+  align-self: center; 
   margin-top: 15px;
   padding: 10px 30px;
   border: none;
   border-radius: 4px;
-  cursor: pointer;  color: white;
+  cursor: pointer;
+  
+
+  color: var(--collor-selected); 
   font-size: 1rem;
   font-weight: bold;
   transition: background-color 0.2s;
-  color: black;
 }
 
 .registerButton:hover { 

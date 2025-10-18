@@ -5,9 +5,7 @@
   justify-content:space-between;
   gap: 20px;
   padding: 10px 20px;
-  
 }
-
 
 .navLogo{
   display:flex;
@@ -25,14 +23,12 @@
   object-fit:cover;
 }
 
-
 .navLinks{
   display:flex;
   gap:12px;
   align-items:center;
   margin-right: 200px;
 }
-
 
 .navButton{
   display:inline-block;
@@ -42,7 +38,6 @@
   color: #0E2050E0;
   text-decoration:none;
   background: #A7B5DD;
-  
   transition: background .18s ease, transform .12s ease;
 }
 

@@ -3,6 +3,7 @@
 import React from "react";
 import styles from "../../styles/home.module.css";
 import ProductCarousel from "../../components/ProductCarousel";
+import Link from 'next/link';
 
 export default function HomePage() {
   return (
@@ -60,7 +61,9 @@ export default function HomePage() {
             Cadastre - se em nosso site para receber emails com novidades e
             descontos exclusivos
           </p>
-          <button className={styles.ctaButton}>Cadastre - se aqui</button>
+          <Link href="/clientes" className={styles.ctaButton}>
+            Cadastre - se aqui
+          </Link>
         </div>
       </section>
     </main>

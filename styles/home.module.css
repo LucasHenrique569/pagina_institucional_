@@ -41,7 +41,7 @@
 
 
 .about {
-  min-height: 600px; 
+  height: 800px; 
   background: linear-gradient(to bottom, var(--color-primary) 50%, #ffffff 50%);
   padding: 28px 0 40px;
   text-align: center;
@@ -80,7 +80,7 @@
   box-shadow: 0 6px 18px rgba(14,32,80,0.06);
   color: var(--white);
   box-sizing: border-box;
-  height: 400px;
+  height: 600px;
 }
 
 .card h3 {
@@ -103,7 +103,7 @@
 .productsSection {
   min-height: 600px; 
   padding: 30px 0;
-  background: var(--color-selected);
+  background: var(--color-secondary);
 }
 
 .productsSection h2 {

@@ -17,15 +17,9 @@
   scroll-behavior: smooth;
   padding: 12px;
   flex: 1 1 auto;
-
-  
-
   scrollbar-width: none; 
-
-  
   -ms-overflow-style: none;
 }
-
 
 .track::-webkit-scrollbar {
   display: none;
@@ -33,10 +27,7 @@
   height: 0;
 }
 
-
-
 .productCard {
-  
   flex: 0 0 300px; 
   height: 350px;
   background: var(--color-backgroundButton); 

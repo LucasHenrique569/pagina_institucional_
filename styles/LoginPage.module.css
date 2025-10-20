@@ -1,0 +1,79 @@
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  padding-top: 15vh; 
+  min-height: 68vh; 
+  background-color: #A7B5DD; 
+}
+
+.loginWrapper {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.title {
+  font-size: 3.2rem; 
+  margin-bottom: 10px; 
+  color: var(--color-title); 
+}
+
+.loginCard {
+  background-color: #ffffff; 
+  padding: 60px 40px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 550px; 
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+  
+  align-items: center; 
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  
+  width: 100%; 
+  max-width: 350px; 
+}
+
+
+.label {
+  font-size: 1rem; 
+  width: 75px;
+  flex-shrink: 0; 
+  text-align: right; 
+  margin-right: 15px;
+  font-weight: bold;
+  color: var(--color-text);
+  
+}
+
+.input {
+  flex-grow: 1; 
+  padding: 6px 10px; 
+  border: 1px solid #000000;
+  border-radius: 3px;
+  font-size: 1rem;
+  min-width: 0; 
+}
+
+
+.button {
+  margin-top: 10px; 
+  width: 100px; 
+  padding: 8px 15px; 
+  font-size: 1rem; 
+  background-color: var(--color-backgroundButton); 
+  color: var(--color-text);
+  font-weight: bold;
+  align-self: center; 
+}

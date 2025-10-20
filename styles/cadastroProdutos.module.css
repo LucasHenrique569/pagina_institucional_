@@ -92,6 +92,7 @@
 .fileButton:hover {
     background-color: var(--color-secondary);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    color: #FFF;
 }
 
 .registerButton {
@@ -114,4 +115,5 @@
 .registerButton:hover {
     background-color: var(--color-secondary);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    color: #FFF;
 }

@@ -3,9 +3,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import "../styles/navbar.css";
-
+import { usePathname } from "next/navigation";
 
 export default function NavBar({ isAdmin }) {
+    const pathname = usePathname();
+
     const publicLinks = [
         { href: "/", label: "Home" },
         { href: "/clientes", label: "Cadastro de clientes" },
@@ -36,14 +38,14 @@ export default function NavBar({ isAdmin }) {
             <div className="navLinks">
                 {!isAdmin &&
                     publicLinks.map((link) => (
-                        <Link key={link.href} href={link.href} className="navButton">
+                        <Link key={link.href} href={link.href} className="navButton" style={pathname === link.href ? { background: '#575D6F' } : {background: '#A7B5DD'}}>
                             {link.label}
                         </Link>
                     ))}
 
                 {isAdmin &&
                     adminLinks.map((link) => (
-                        <Link key={link.href} href={link.href} className="navButton">
+                        <Link key={link.href} href={link.href} className="navButton" style={pathname === link.href ? { background: '#575D6F', color: '#FFF' } : {background: '#A7B5DD'}}>
                             {link.label}
                         </Link>
                     ))}

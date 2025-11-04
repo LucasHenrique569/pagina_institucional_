@@ -27,6 +27,7 @@ footer .icones {
   gap: 20px;
   align-items: center;
   margin-top: 15px;
+  justify-content: center;
 }
 
 footer .icones i {
